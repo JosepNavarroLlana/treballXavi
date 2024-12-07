@@ -1,0 +1,204 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #ff4b44;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding:20px;
+}
+
+.main2 {
+  float: left;
+  width: 60%;
+  padding:20px;
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.right {
+color: black;
+  background-color: #ffffff;
+  float: right;
+  width: min-content;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  border: 1px solid #EAEAEA;
+}
+
+.Clasificación{
+    width: 100%;
+    
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right2 {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.noticia-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.noticia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  border: 1px solid #ddd; 
+  padding: 10px; 
+  flex-wrap: wrap; 
+}
+
+.noticia img {
+  width: 200px; 
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .noticia {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .noticia img {
+    width: 100%;
+    max-width: 300px; 
+  }
+
+  .noticia-container {
+    gap: 15px;
+  }
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 480px) {
+  .noticia {
+    width: 95%; 
+    padding: 8px; 
+  }
+
+  .noticia img {
+    max-width: 100%; 
+  }
+}
+
+.posicio2{
+  background-color: #F4F4F4;
+
+}
+td{
+  text-align: center;
+}
+.top4{
+  background-color: #4FDE36;
+}
+
+.club-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.club-card {
+  text-decoration: none; 
+  background-color: #e63946; 
+  color: #fff; 
+  border-radius: 10px;
+  overflow: hidden; 
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out; 
+}
+
+.club-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.club-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+}
+
+.club-card p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.club-card button {
+  background-color: #1d3557;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.club-card button:hover {
+  background-color: #457b9d;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
